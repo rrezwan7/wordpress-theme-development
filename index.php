@@ -33,3 +33,5 @@
 
 <?php
 get_footer( ); ?>
+
+/* A Comment is added to check Git */
