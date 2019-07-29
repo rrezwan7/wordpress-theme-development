@@ -13,6 +13,7 @@ function university_features() {
     register_nav_menu( 'footerLeft', 'Footer Left' );
     register_nav_menu('footerRight', 'Footer Right');
     add_theme_support( 'title-tag' );
+    add_theme_support( 'post-thumbnails' );
 }
 add_action( 'after_setup_theme', 'university_features' );
 

@@ -36,17 +36,25 @@
           )
         ));
         if($relatedprofessor->have_posts()) {
-
-        
-
+                  
         echo '<hr class="section-break">';
         echo '<h2 class="headline headline--medium">'.get_the_title().' Professors</h2>';
-          while($relatedprofessor -> have_posts()){
+
+        echo '<ul class="professor-cards">'  ;
+
+        while($relatedprofessor -> have_posts()){
             $relatedprofessor -> the_post();?>
-           
-           <li><a href="<?php the_permalink( ); ?>"><?php the_title();?></a></li>
+             <li class="professor-card__list-item">
+
+               <a class="professor-card" href="<?php the_permalink( ); ?>">
+
+           <img src="<?php the_post_thumbnail_url(); ?>" class="professor-card__image">
+            <span class="professor-card__name"><?php the_title(); ?></span>  
+         
+          </a></li>
         
         <?php  }
+        echo '</ul>';
         
     } 
 
