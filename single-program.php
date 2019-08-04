@@ -48,7 +48,7 @@
 
                <a class="professor-card" href="<?php the_permalink( ); ?>">
 
-           <img src="<?php the_post_thumbnail_url(); ?>" class="professor-card__image">
+           <img src="<?php the_post_thumbnail_url('professorLandscape'); ?>" class="professor-card__image">
             <span class="professor-card__name"><?php the_title(); ?></span>  
          
           </a></li>
